@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bootcamp POO Java - Fernando Gutierrez Rojas
 
 ## 📋 Información
@@ -21,3 +22,6 @@
 cd semana-01/src
 javac *.java
 java Main
+=======
+# bc-poo-java-fernando-gutierrez
+>>>>>>> 10b202c (Primer commit: estructura de semana-01 y clase OrdenDeReparacion)

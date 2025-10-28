@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Bootcamp POO Java - Fernando Gutierrez Rojas
 
 ## 📋 Información

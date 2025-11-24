@@ -1,25 +1,26 @@
-# Semana 01 - Introducción a POO
+# Bootcamp POO Java - Fernando Gutierrez Rojas
 
-## 📝 Descripción
+---
 
-En esta semana se realizó la primera aproximación al paradigma de Programación Orientada a Objetos (POO) aplicándolo al dominio del taller de motos **"Velocidad Segura"**.  
-Se identificaron los primeros objetos del dominio y se crearon las clases base que representan un servicio de mantenimiento y un cliente del taller.
+### 📋 Información
 
-## 🎯 Objetivos Cumplidos
+* **Estudiante:** Fernando Gutierrez Rojas
+* **Ficha:** 3228970A
+* **Dominio Asignado:** https://github.com/Fervelop/bc-poo-java-fernando-gutierrez
+* **Instructor:** Erick Granados Torres
 
-- [x] Implementar clase principal del dominio (`MaintenanceService`)
-- [x] Implementar clase secundaria relacionada (`Client`)
-- [x] Crear programa de demostración
-- [x] Documentar análisis del dominio 
+---
 
-## 📂 Archivos Entregados
+### 🔗 Estructura del Repositorio
 
-| Archivo | Descripción |
-|--------|-------------|
-| `src/MaintenanceService.java` | Clase principal que modela un servicio de mantenimiento para motocicletas. |
-| `src/Client.java` | Clase secundaria que representa al cliente y su historial en el taller. |
-| `src/Main.java` | Programa principal que prueba las clases creadas e imprime los resultados. |
-| `docs/ANALISIS.md` | Documento con el análisis orientado a objetos del dominio. |
+| Semana | Tema Principal |
+| :--- | :--- |
+| **semana-01** | Introducción a POO |
+| **semana-02** | Clases y Objetos |
+| **semana-03** | Encapsulación y Constructores |
+| **semana-04** | Herencia |
+| **semana-05** | Sobrecarga, Sobrescritura y Polimorfismo |
+| **semana-06** | Abstracción e Interfaces |
 
 ## 🚀 Instrucciones de Ejecución
 

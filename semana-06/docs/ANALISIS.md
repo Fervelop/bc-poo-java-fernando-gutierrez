@@ -1,0 +1,129 @@
+# POLIMORFISMO EN EL SISTEMA DE TALLER DE MOTOS
+
+## 1. Sobrecarga (Overloading)
+
+La **sobrecarga** ocurre cuando varios métodos tienen **el mismo nombre**, pero **diferentes parámetros**.
+
+En nuestro sistema del Taller de Motos, la sobrecarga se aplica principalmente en el **GestorTallerMotos**, permitiendo buscar servicios según diferentes criterios.
+
+### Métodos Sobrecargados en GestorTallerMotos
+
+```java
+public ArrayList<MaintenanceService> buscarServicio(String typeService);
+public ArrayList<MaintenanceService> buscarServicio(Client client);
+public ArrayList<MaintenanceService> buscarServicio(boolean finalized);
+```
+
+### Justificación en el Dominio
+
+En un taller de motos, se deben realizar consultas de servicios por distintos motivos:
+
+| Necesidad del negocio                | Método sobrecargado     | Descripción                                   |
+| ------------------------------------ | ----------------------- | --------------------------------------------- |
+| Buscar servicios por tipo            | buscarServicio(String)  | "llantas", "frenos", etc.                     |
+| Buscar servicios hechos a un cliente | buscarServicio(Client)  | Encuentra servicios según el dueño de la moto |
+| Buscar servicios finalizados o no    | buscarServicio(boolean) | Útil para reportes y control interno          |
+
+
+---
+
+## 2. Sobrescritura (Overriding)
+
+La sobrescritura ocurre cuando una **subclase redefine un método** que ya existe en la **clase padre**, utilizando `@Override`.
+
+En nuestro sistema, la clase padre es **Person**, con dos subclases:
+
+- **Client**
+- **Mechanic**
+
+Ambas sobrescriben el método heredado.
+
+### Métodos Sobrescritos
+
+```java
+@Override
+public String getRole();
+```
+
+### Tabla Comparativa de Sobrescritura
+
+| Método           | Clase Padre (Person) | Client                      | Mechanic                         |
+| ---------------- | -------------------- | --------------------------- | -------------------------------- |
+| getDescription() | "Persona genérica"   | "Cliente: nombre, teléfono" | "Mecánico: nombre, especialidad" |
+
+Esto permite que al llamar el mismo método, cada tipo de persona muestre información relevante.
+
+---
+
+## 3. Polimorfismo Dinámico (Dynamic Binding)
+
+El polimorfismo dinámico ocurre cuando una referencia del **tipo padre** ejecuta un método definido en una **subclase**.
+
+Se ve claramente cuando usamos un **ArrayList<Person>** y dentro colocamos `Client` y `Mechanic`.
+
+### Ejemplo Real del Proyecto
+
+```java
+ArrayList<Person> persons = new ArrayList<>();
+persons.add(c1); // Client
+persons.add(m1); // Mechanic
+
+for (Person p : persons) {
+    System.out.println(p.getRole()); // Dynamic Binding
+}
+```
+
+### Explicación
+
+Aunque el array es de tipo **Person**, cuando se ejecuta:
+
+```java
+p.getRole)
+```
+
+Java decide **en tiempo de ejecución** cuál versión llamar:
+
+- Si p es un `Client` → llama la versión de Client.
+- Si p es un `Mechanic` → llama la versión de Mechanic.
+
+Esto ocurre sin necesidad de hacer if/else o conversiones.
+
+---
+
+## 4. Beneficios del Polimorfismo
+
+### 1. Código más limpio y reutilizable
+
+Podemos tratar objetos diferentes (Client y Mechanic) bajo el mismo tipo: Person.
+
+### 2. Facilidad para extender el sistema
+
+Si mañana agregamos:
+
+- `Admin`
+- `Proveedor`
+- `Recepcionista`
+
+Mientras extiendan Person y sobrescriban métodos, el sistema seguirá funcionando.
+
+### 3. Mantiene el principio OCP (Open/Closed Principle)
+
+Puedo agregar nuevas subclases **sin modificar** el código existente.
+
+### 4. Búsquedas flexibles con sobrecarga
+
+Permite tener un solo método `buscarServicio()` que funciona según el parámetro.
+
+### 5. Permite implementar Dynamic Binding
+
+Haciendo que el programa se comporte de manera diferente según el tipo real del objeto.
+
+---
+
+## ¿Qué sería difícil sin polimorfismo?
+
+- Tendríamos que hacer **muchos if/else** para saber si un objeto es Cliente o Mecánico.
+- Tendríamos métodos con nombres largos: `buscarServicioPorCliente`, `buscarServicioPorTipo`…
+- Sería difícil agregar nuevos tipos de personas sin reescribir medio sistema.
+- El código sería más rígido y menos profesional.
+

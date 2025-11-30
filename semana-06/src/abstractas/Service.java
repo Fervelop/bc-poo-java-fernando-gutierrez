@@ -24,5 +24,6 @@ public abstract class Service {
     public String getServiceName() {
         return serviceName;
     }
+    public double getBaseCost() { return baseCost;    }
 
 } // end class

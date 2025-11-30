@@ -1,25 +1,30 @@
-# Semana 05 - Polimorfismo
+# Semana 06 - Abstracción e Interfaces 🎨
 
 ## 🎯 Objetivos Cumplidos
 
-- Distinguir entre polimorfismo en tiempo de compilación y tiempo de ejecución
-- Implementar métodos sobrecargados (overloading) correctamente
-- Sobrescribir métodos heredados usando @Override
-- Aplicar equals(), hashCode() y Comparable
-- Crear sistemas flexibles usando polimorfismo dinámico
+- Comprender el concepto de abstracción y su importancia en el diseño
+- Crear y utilizar clases abstractas correctamente
+- Definir e implementar interfaces en Java
+- Diferenciar cuándo usar clases abstractas vs interfaces
+- Aplicar abstracción en el diseño de sistemas orientados a objetos
+- Implementar múltiples interfaces en una clase
 
 ## 📂 Archivos Entregados
 
-- `src/MaintenanceService.java` - Clase principal (actualizado)
-- `src/Client.java` - Clase secundaria (actualizado)
-- `src/Mechanic.java` - Clase secundaria (actualizado)
-- `src/GestorTallerMotos.java` - Gestor (actualizado)
-- `src/Main.java` - Programa integrado (actualizado)
-- `docs/POLIMORFISMO.md` - Polimorfismo
+- `src/abstractas/Service.java` - Clase Abstracta
+- `src/implementaciones/BrakeService.java` - Subclase concreta
+- `src/implementaciones/OilChangeService.java` - Subclase concreta
+- `src/implementaciones/TireChangeService.java` - Subclase concreta
+- `src/interfaces/Repairable.java` - Interface
+- `src/interfaces/TimeTrackable.java` - Interface
+- `Main.java` - Programa integrado
+- `README.md` - Abstracción e Interfaces
 
 ## 🚀 Cómo Ejecutar
 
 ```bash
-cd semana-05/src
+cd semana-06/src
 javac *.java
+
 java Main
+

@@ -1,3 +1,6 @@
+import com.tallermotos.modelo.*;
+import com.tallermotos.servicio.*;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -130,12 +133,12 @@ public class Main {
 
         // 3. ArrayList POLIMÓRFICO
         ArrayList<Person> persons = new ArrayList<>();
-        persons.add(c1);  // Person -> Client
-        persons.add(c2);  // Person -> Client
-        persons.add(m1);  // Person -> Mechanic
-        persons.add(m2);  // Person -> Mechanic
+        persons.add(c1);  // com.tallermotos.modelo.Person -> com.tallermotos.modelo.Client
+        persons.add(c2);  // com.tallermotos.modelo.Person -> com.tallermotos.modelo.Client
+        persons.add(m1);  // com.tallermotos.modelo.Person -> com.tallermotos.modelo.Mechanic
+        persons.add(m2);  // com.tallermotos.modelo.Person -> com.tallermotos.modelo.Mechanic
 
-        System.out.println("=== DEMOSTRACIÓN DE POLIMORFISMO (Person -> Client / Mechanic) ===\n");
+        System.out.println("=== DEMOSTRACIÓN DE POLIMORFISMO (com.tallermotos.modelo.Person -> com.tallermotos.modelo.Client / com.tallermotos.modelo.Mechanic) ===\n");
 
         // 4. Dynamic binding: cada objeto ejecuta su propia sobrescritura de getDescription()
         for (Person p : persons) {

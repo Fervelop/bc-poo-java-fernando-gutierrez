@@ -11,12 +11,12 @@
 
 ## 📂 Archivos Entregados
 
-- `src/abstractas/Service.java` - Clase Abstracta
-- `src/implementaciones/BrakeService.java` - Subclase concreta
-- `src/implementaciones/OilChangeService.java` - Subclase concreta
-- `src/implementaciones/TireChangeService.java` - Subclase concreta
-- `src/interfaces/Repairable.java` - Interface
-- `src/interfaces/TimeTrackable.java` - Interface
+- `src/com.tallermotos/abstractas/Service.java` - Clase Abstracta
+- `src/com.tallermotos/implementaciones/BrakeService.java` - Subclase concreta
+- `src/com.tallermotos/implementaciones/OilChangeService.java` - Subclase concreta
+- `src/com.tallermotos/implementaciones/TireChangeService.java` - Subclase concreta
+- `src/com.tallermotos/interfaces/Repairable.java` - Interface
+- `src/com.tallermotos/interfaces/TimeTrackable.java` - Interface
 - `Main.java` - Programa integrado
 - `README.md` - Abstracción e Interfaces
 

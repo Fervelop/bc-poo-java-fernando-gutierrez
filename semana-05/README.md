@@ -10,10 +10,10 @@
 
 ## 📂 Archivos Entregados
 
-- `src/MaintenanceService.java` - Clase principal (actualizado)
-- `src/Client.java` - Clase secundaria (actualizado)
-- `src/Mechanic.java` - Clase secundaria (actualizado)
-- `src/GestorTallerMotos.java` - Gestor (actualizado)
+- `src/com.tallermotos.modelo.MaintenanceService.java` - Clase principal (actualizado)
+- `src/com.tallermotos.modelo.Client.java` - Clase secundaria (actualizado)
+- `src/com.tallermotos.modelo.Mechanic.java` - Clase secundaria (actualizado)
+- `src/com.tallermotos.servicio.GestorTallerMotos.java` - Gestor (actualizado)
 - `src/Main.java` - Programa integrado (actualizado)
 - `docs/POLIMORFISMO.md` - Polimorfismo
 

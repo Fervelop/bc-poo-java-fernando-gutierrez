@@ -2,7 +2,7 @@
 
 ## Encapsulación Aplicada
 
-### Clase: Client
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client
 - Atributos encapsulados:
   - nameClient
   - lastNameClient
@@ -15,7 +15,7 @@
   - Para `setPhoneNumber`: El número de teléfono debe tener entre 7 y 15 dígitos
   - Para `setEmail`: El correo electrónico no puede estar vacío
 
-### Clase: MaintenanceService
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService
 - Atributos encapsulados:
   - typeService 
   - mechanic
@@ -26,7 +26,7 @@
     - Para `setFinalized`: No permite finalizar el servicio si no hay mecánico asignado.
     - Para `setMechanic`: El mecánico no puede ser null.
 
-### Clase: Mechanic
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic
 - Atributos encapsulados: 
   - nameMechanic
   - id
@@ -40,7 +40,7 @@
 
 ## Constructores Sobrecargados
 
-### Clase: Client
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client
 - Constructor 1: Recibe todos los datos del cliente (nombre, apellido, teléfono, email, placa, modelo y número de servicios).
   Es el constructor principal que garantiza la creación de un objeto totalmente definido.
 - Constructor 2: Recibe únicamente el nombre del cliente y la placa.
@@ -56,7 +56,7 @@
 - Evita código repetitivo: Los constructores básicos y mínimos reutilizan el constructor completo mediante this(...), centralizando la lógica de inicialización. 
 - Mejor experiencia de desarrollo: Facilita pruebas, prototipos y registros rápidos en el flujo del taller sin necesidad de conocer toda la información del cliente desde el inicio.
 
-### Clase: MaintenanceService
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService
 - Constructor 1: Recibe todos los datos necesarios para crear un servicio de mantenimiento:
   typeService, mechanic, costBase, workingTime y serviceId.
   Permite definir un servicio totalmente detallado, incluyendo su identificador único y dejando el campo finalized inicialmente en false.
@@ -72,7 +72,7 @@
 - Reducción de código repetido: Los constructores básico y mínimo reutilizan la lógica del constructor completo mediante this(...), garantizando consistencia. 
 - Mayor comodidad y velocidad: Facilita la creación de servicios preliminares cuando aún no se dispone del tipo o del ID final, mejorando el flujo de trabajo.
 
-### Clase: Mechanic
+### Clase: com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic
 - Constructor 1: Recibe el nombre, el ID y la especialización del mecánico.
   Además, inicializa automáticamente: `isAvailable = true` (mecánico disponible)
 `completedJobsCount = 0` (sin trabajos completados)

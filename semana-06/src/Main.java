@@ -1,8 +1,7 @@
-import abstractas.*;
-import implementaciones.BrakeService;
-import implementaciones.OilChangeService;
-import implementaciones.TireChangeService;
-import interfaces.*;
+import com.tallermotos.abstractas.*;
+import com.tallermotos.implementaciones.*;
+import com.tallermotos.interfaces.*;
+
 public class Main {
     public static void main(String[] args) {
 

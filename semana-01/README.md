@@ -7,19 +7,19 @@ Se identificaron los primeros objetos del dominio y se crearon las clases base q
 
 ## 🎯 Objetivos Cumplidos
 
-- [x] Implementar clase principal del dominio (`MaintenanceService`)
-- [x] Implementar clase secundaria relacionada (`Client`)
+- [x] Implementar clase principal del dominio (`com.tallermotos.modelo.MaintenanceService`)
+- [x] Implementar clase secundaria relacionada (`com.tallermotos.modelo.Client`)
 - [x] Crear programa de demostración
 - [x] Documentar análisis del dominio 
 
 ## 📂 Archivos Entregados
 
-| Archivo | Descripción |
-|--------|-------------|
-| `src/MaintenanceService.java` | Clase principal que modela un servicio de mantenimiento para motocicletas. |
-| `src/Client.java` | Clase secundaria que representa al cliente y su historial en el taller. |
-| `src/Main.java` | Programa principal que prueba las clases creadas e imprime los resultados. |
-| `docs/ANALISIS.md` | Documento con el análisis orientado a objetos del dominio. |
+| Archivo                                     | Descripción |
+|---------------------------------------------|-------------|
+| `src/com.tallermotos.modelo.MaintenanceService.java` | Clase principal que modela un servicio de mantenimiento para motocicletas. |
+| `src/com.tallermotos.modelo.Client.java`    | Clase secundaria que representa al cliente y su historial en el taller. |
+| `src/Main.java`                             | Programa principal que prueba las clases creadas e imprime los resultados. |
+| `docs/ANALISIS.md`                          | Documento con el análisis orientado a objetos del dominio. |
 
 ## 🚀 Instrucciones de Ejecución
 

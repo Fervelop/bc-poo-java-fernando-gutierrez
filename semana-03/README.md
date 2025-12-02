@@ -21,10 +21,10 @@ En esta semana se aplicaros los principios de encapsulación y se añadieron con
 
 ## 📂 Archivos Entregados
 
-- `src/MaintenanceService.java` - Clase principal (actualizado)
-- `src/Client.java` - Clase secundaria (actualizado)
-- `src/Mechanic.java` - Clase secundaria (actualizado)
-- `src/GestorTallerMotos.java` - Gestor 
+- `src/com.tallermotos.modelo.MaintenanceService.java` - Clase principal (actualizado)
+- `src/com.tallermotos.modelo.Client.java` - Clase secundaria (actualizado)
+- `src/com.tallermotos.modelo.Mechanic.java` - Clase secundaria (actualizado)
+- `src/com.tallermotos.servicio.GestorTallerMotos.java` - Gestor 
 - `src/Main.java` - Programa integrado (actualizado)
 - `docs/ANALISIS.md` - Análisis actualizado 
 

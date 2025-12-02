@@ -4,14 +4,14 @@
 
 La **sobrecarga** ocurre cuando varios métodos tienen **el mismo nombre**, pero **diferentes parámetros**.
 
-En nuestro sistema del Taller de Motos, la sobrecarga se aplica principalmente en el **GestorTallerMotos**, permitiendo buscar servicios según diferentes criterios.
+En nuestro sistema del Taller de Motos, la sobrecarga se aplica principalmente en el **com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.GestorTallerMotos**, permitiendo buscar servicios según diferentes criterios.
 
-### Métodos Sobrecargados en GestorTallerMotos
+### Métodos Sobrecargados en com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.GestorTallerMotos
 
 ```java
-public ArrayList<MaintenanceService> buscarServicio(String typeService);
-public ArrayList<MaintenanceService> buscarServicio(Client client);
-public ArrayList<MaintenanceService> buscarServicio(boolean finalized);
+public ArrayList<com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService> buscarServicio(String typeService);
+public ArrayList<com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService> buscarServicio(com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client client);
+public ArrayList<com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService> buscarServicio(boolean finalized);
 ```
 
 ### Justificación en el Dominio
@@ -21,7 +21,7 @@ En un taller de motos, se deben realizar consultas de servicios por distintos mo
 | Necesidad del negocio                | Método sobrecargado     | Descripción                                   |
 | ------------------------------------ | ----------------------- | --------------------------------------------- |
 | Buscar servicios por tipo            | buscarServicio(String)  | "llantas", "frenos", etc.                     |
-| Buscar servicios hechos a un cliente | buscarServicio(Client)  | Encuentra servicios según el dueño de la moto |
+| Buscar servicios hechos a un cliente | buscarServicio(com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client)  | Encuentra servicios según el dueño de la moto |
 | Buscar servicios finalizados o no    | buscarServicio(boolean) | Útil para reportes y control interno          |
 
 
@@ -31,10 +31,10 @@ En un taller de motos, se deben realizar consultas de servicios por distintos mo
 
 La sobrescritura ocurre cuando una **subclase redefine un método** que ya existe en la **clase padre**, utilizando `@Override`.
 
-En nuestro sistema, la clase padre es **Person**, con dos subclases:
+En nuestro sistema, la clase padre es **com.tallermotos.modelo.com.tallermotos.modelo.Person**, con dos subclases:
 
-- **Client**
-- **Mechanic**
+- **com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client**
+- **com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic**
 
 Ambas sobrescriben el método heredado.
 
@@ -47,7 +47,7 @@ public String getRole();
 
 ### Tabla Comparativa de Sobrescritura
 
-| Método           | Clase Padre (Person) | Client                      | Mechanic                         |
+| Método           | Clase Padre (com.tallermotos.modelo.com.tallermotos.modelo.Person) | com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client                      | com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic                         |
 | ---------------- | -------------------- | --------------------------- | -------------------------------- |
 | getDescription() | "Persona genérica"   | "Cliente: nombre, teléfono" | "Mecánico: nombre, especialidad" |
 
@@ -59,23 +59,23 @@ Esto permite que al llamar el mismo método, cada tipo de persona muestre inform
 
 El polimorfismo dinámico ocurre cuando una referencia del **tipo padre** ejecuta un método definido en una **subclase**.
 
-Se ve claramente cuando usamos un **ArrayList<Person>** y dentro colocamos `Client` y `Mechanic`.
+Se ve claramente cuando usamos un **ArrayList<com.tallermotos.modelo.com.tallermotos.modelo.Person>** y dentro colocamos `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client` y `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic`.
 
 ### Ejemplo Real del Proyecto
 
 ```java
-ArrayList<Person> persons = new ArrayList<>();
-persons.add(c1); // Client
-persons.add(m1); // Mechanic
+ArrayList<com.tallermotos.modelo.com.tallermotos.modelo.Person> persons = new ArrayList<>();
+persons.add(c1); // com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client
+persons.add(m1); // com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic
 
-for (Person p : persons) {
+for (com.tallermotos.modelo.com.tallermotos.modelo.Person p : persons) {
     System.out.println(p.getRole()); // Dynamic Binding
 }
 ```
 
 ### Explicación
 
-Aunque el array es de tipo **Person**, cuando se ejecuta:
+Aunque el array es de tipo **com.tallermotos.modelo.com.tallermotos.modelo.Person**, cuando se ejecuta:
 
 ```java
 p.getRole)
@@ -83,8 +83,8 @@ p.getRole)
 
 Java decide **en tiempo de ejecución** cuál versión llamar:
 
-- Si p es un `Client` → llama la versión de Client.
-- Si p es un `Mechanic` → llama la versión de Mechanic.
+- Si p es un `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client` → llama la versión de com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client.
+- Si p es un `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic` → llama la versión de com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic.
 
 Esto ocurre sin necesidad de hacer if/else o conversiones.
 
@@ -94,7 +94,7 @@ Esto ocurre sin necesidad de hacer if/else o conversiones.
 
 ### 1. Código más limpio y reutilizable
 
-Podemos tratar objetos diferentes (Client y Mechanic) bajo el mismo tipo: Person.
+Podemos tratar objetos diferentes (com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client y com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic) bajo el mismo tipo: com.tallermotos.modelo.com.tallermotos.modelo.Person.
 
 ### 2. Facilidad para extender el sistema
 
@@ -104,7 +104,7 @@ Si mañana agregamos:
 - `Proveedor`
 - `Recepcionista`
 
-Mientras extiendan Person y sobrescriban métodos, el sistema seguirá funcionando.
+Mientras extiendan com.tallermotos.modelo.com.tallermotos.modelo.Person y sobrescriban métodos, el sistema seguirá funcionando.
 
 ### 3. Mantiene el principio OCP (Open/Closed Principle)
 

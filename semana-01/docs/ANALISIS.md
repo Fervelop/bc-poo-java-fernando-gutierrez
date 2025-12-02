@@ -2,7 +2,7 @@
 
 ## 1. Identificación de Objetos
 
-### Objeto Principal: `MaintenanceService` (Servicio de Mantenimiento)
+### Objeto Principal: `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService` (Servicio de Mantenimiento)
 **Justificación:**  
 Es el objeto central del dominio porque representa el servicio principal que ofrece el taller. Modela la actividad esencial del negocio: realizar mantenimiento y reparaciones a motocicletas.
 
@@ -26,7 +26,7 @@ Es el objeto central del dominio porque representa el servicio principal que ofr
 
 ---
 
-### 👤 Objeto Secundario: `Client` (Cliente)
+### 👤 Objeto Secundario: `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client` (Cliente)
 
 **Justificación:**  
 Representa a la persona que solicita los servicios del taller. Es necesario para registrar información del cliente, su moto y la frecuencia con la que usa el servicio.
@@ -52,8 +52,8 @@ Representa a la persona que solicita los servicios del taller. Es necesario para
 
 ### 🔗 Relación con el Objeto Principal
 
-- La clase `MaintenanceService` representa un servicio realizado por el taller.
-- La clase `Client` representa al dueño de la motocicleta que solicita el servicio.
+- La clase `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService` representa un servicio realizado por el taller.
+- La clase `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client` representa al dueño de la motocicleta que solicita el servicio.
 - En el mundo real, un **Cliente puede tener varios servicios realizados**, pero un **Servicio pertenece a un único Cliente**.
 
 **Tipo de relación:** Asociación (1 Cliente → N Servicios)
@@ -62,7 +62,7 @@ Representa a la persona que solicita los servicios del taller. Es necesario para
 
 ```mermaid
 classDiagram
-    class Client {
+    class com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client {
         -String nameClient
         -String lastNameClient
         -long phoneNumber
@@ -75,7 +75,7 @@ classDiagram
         +isFrequentClient() boolean
     }
 
-    class MaintenanceService {
+    class com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService {
         -String typeService
         -String mechanicName
         -double costBase
@@ -86,7 +86,7 @@ classDiagram
         +setFinalized()
     }
 
-Client "1" --> "many" MaintenanceService
+com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client "1" --> "many" com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService
 ``` 
 
 ## 3. Decisiones de Diseño
@@ -99,7 +99,7 @@ Los atributos definidos representan la información mínima necesaria para model
 - **costBase, workingTime:** Son esenciales para calcular el costo total, considerando tanto el servicio como la mano de obra.
 - **finalized:** Indica el estado del servicio, lo que permite saber si está en proceso o ya fue entregado al cliente.
 
-En el objeto **Client**, los atributos permiten identificar plenamente al cliente y su motocicleta, así como su historial de servicios para conocer su fidelidad al taller.
+En el objeto **com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client**, los atributos permiten identificar plenamente al cliente y su motocicleta, así como su historial de servicios para conocer su fidelidad al taller.
 
 ### ¿Qué validaciones implementé?
 
@@ -118,7 +118,7 @@ En el objeto **Client**, los atributos permiten identificar plenamente al client
 ## 4. Dificultades Encontradas
 
 - La primera dificultad fue definir claramente qué información debía tener cada clase sin mezclar responsabilidades. Se solucionó separando los datos del cliente y los datos del servicio.
-- También hubo confusión inicial sobre dónde debía ir la lógica del descuento por fidelidad. Se resolvió ubicándola en la clase `Client`, ya que es el cliente quien puede ser frecuente, no el servicio.
+- También hubo confusión inicial sobre dónde debía ir la lógica del descuento por fidelidad. Se resolvió ubicándola en la clase `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client`, ya que es el cliente quien puede ser frecuente, no el servicio.
 - Finalmente, adaptar los métodos para que fueran útiles y coherentes con un proceso real de taller requirió analizar el flujo real de atención al cliente.
 
 ## 5. Comparación: POO vs Programación Estructurada
@@ -145,8 +145,8 @@ Con la Programación Orientada a Objetos, los datos se organizan dentro de clase
 Los atributos y métodos están encapsulados dentro de cada clase, haciendo que el código sea más fácil de entender y mantener.
 
 Beneficios aplicados:
-- La clase `MaintenanceService` agrupa la información del servicio y calcula su costo total.
-- La clase `Client` almacena los datos del cliente y determina si es frecuente.
+- La clase `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService` agrupa la información del servicio y calcula su costo total.
+- La clase `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client` almacena los datos del cliente y determina si es frecuente.
 - Se modela la relación entre objetos de forma más natural y cercana a la realidad.
 
 ### Ventajas específicas en mi dominio

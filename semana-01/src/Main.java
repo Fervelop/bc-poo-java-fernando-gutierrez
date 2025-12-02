@@ -1,7 +1,9 @@
+import com.tallermotos.modelo.*;
+
 public class Main {
     public static void main(String[] args) {
 
-        // Crear un objeto de la clase MaintenanceService
+        // Crear un objeto de la clase com.tallermotos.modelo.MaintenanceService
         MaintenanceService service1 = new MaintenanceService("Cambio de Aceite","Tatiana Torres",
                 35000,1);
         MaintenanceService service2 = new MaintenanceService("Cambio de llantas","Jose Martinez", 150000, 2);

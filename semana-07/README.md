@@ -17,8 +17,8 @@ Se asume la estructura de paquetes `com.taller`.
 | Paquete | Contenido / Descripción |
 | :--- | :--- |
 | `com.taller/` | **Raíz** del proyecto. |
-| `├── modelo/` | Clases de datos (entidades): `Person`, `Client`, `Mechanic`, `MaintenanceService`. |
-| `├── servicio/` | Clases de lógica de negocio: `GestorTallerMotos`. |
+| `├── modelo/` | Clases de datos (entidades): `com.tallermotos.modelo.com.tallermotos.modelo.Person`, `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Client`, `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic`, `com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.MaintenanceService`. |
+| `├── servicio/` | Clases de lógica de negocio: `com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.GestorTallerMotos`. |
 | `├── excepciones/` | Clases de excepciones personalizadas. |
 | `└── Main.java` | Clase principal para la ejecución y demostración. |
 

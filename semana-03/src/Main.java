@@ -1,3 +1,6 @@
+import com.tallermotos.modelo.*;
+import com.tallermotos.servicio.*;
+
 public class Main {
     public static void main(String[] args) {
 

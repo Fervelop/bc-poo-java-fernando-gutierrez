@@ -3,8 +3,8 @@
 ## 📝 Descripción
 
 En esta semana expandí mi modelo orientado a objetos agregando:
-- Una tercera clase: **Mechanic**
-- Un sistema gestor con arrays **GestorTallerMotos**
+- Una tercera clase: **com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.com.tallermotos.modelo.Mechanic**
+- Un sistema gestor con arrays **com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.com.tallermotos.servicio.GestorTallerMotos**
 - Funcionalidades de búsqueda y listado
 
 ## 🎯 Objetivos Cumplidos
@@ -17,10 +17,10 @@ En esta semana expandí mi modelo orientado a objetos agregando:
 
 ## 📂 Archivos Entregados
 
-- `src/MaintenanceService.java` - Clase principal (de semana-01)
-- `src/Client.java` - Clase secundaria (de semana-01)
-- `src/Mechanic.java` - ⭐ NUEVA clase
-- `src/GestorTallerMotos.java` - ⭐ NUEVO sistema gestor
+- `src/com.tallermotos.modelo.MaintenanceService.java` - Clase principal (de semana-01)
+- `src/com.tallermotos.modelo.Client.java` - Clase secundaria (de semana-01)
+- `src/com.tallermotos.modelo.Mechanic.java` - ⭐ NUEVA clase
+- `src/com.tallermotos.servicio.GestorTallerMotos.java` - ⭐ NUEVO sistema gestor
 - `src/Main.java` - Programa integrado
 - `docs/ANALISIS.md` - Análisis actualizado
 

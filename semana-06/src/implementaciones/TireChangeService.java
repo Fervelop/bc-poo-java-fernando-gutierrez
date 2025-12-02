@@ -1,5 +1,6 @@
 package implementaciones;
-package interfaces;
+import interfaces.*;
+import abstractas.*;
 
 public class TireChangeService extends Service implements TimeTrackable, Repairable { // Clase cambio de llantas
 
@@ -11,7 +12,8 @@ public class TireChangeService extends Service implements TimeTrackable, Repaira
     private double costLabour; // Costo de mano de obra
 
     // Constructor
-    public TireChangeService(double costPerTire, int numberOfTires, double costLabour) {
+    public TireChangeService(String serviceName, double baseCost, double costPerTire, int numberOfTires, double costLabour) {
+        super(serviceName, baseCost);
         this.costPerTire = costPerTire;
         this.numberOfTires = numberOfTires;
         this.costLabour = costLabour;
@@ -48,5 +50,10 @@ public class TireChangeService extends Service implements TimeTrackable, Repaira
     @Override
     public String diagnosticateFault() {
         return "El vehiculo no presenta fallas, solo se realiza el cambio de llantas.";
+    }
+
+    @Override
+    public double calculateTotalCost() {
+        return (costPerTire * numberOfTires) + costLabour + baseCost;
     }
 }

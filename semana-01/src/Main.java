@@ -1,4 +1,5 @@
-import com.tallermotos.modelo.*;
+import com.tallermotos.modelo.Client;
+import com.tallermotos.modelo.MaintenanceService;
 
 public class Main {
     public static void main(String[] args) {

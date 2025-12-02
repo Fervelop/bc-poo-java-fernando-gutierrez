@@ -1,6 +1,8 @@
 package com.tallermotos.servicio;
 
-import com.tallermotos.modelo.*;
+import com.tallermotos.modelo.MaintenanceService;
+import com.tallermotos.modelo.Client;
+import com.tallermotos.modelo.Mechanic;
 
 import java.util.ArrayList;
 

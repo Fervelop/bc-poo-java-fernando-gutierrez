@@ -1,6 +1,9 @@
-import com.tallermotos.abstractas.*;
-import com.tallermotos.implementaciones.*;
-import com.tallermotos.interfaces.*;
+import com.tallermotos.abstractas.Service;
+import com.tallermotos.implementaciones.BrakeService;
+import com.tallermotos.implementaciones.OilChangeService;
+import com.tallermotos.implementaciones.TireChangeService;
+import com.tallermotos.interfaces.Repairable;
+import com.tallermotos.interfaces.TimeTrackable;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.tallermotos.implementaciones;
 
-import com.tallermotos.abstractas.*;
+import com.tallermotos.abstractas.Service;
 
 public class BrakeService extends Service {
 

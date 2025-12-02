@@ -1,6 +1,7 @@
 package com.tallermotos.implementaciones;
-import com.tallermotos.abstractas.*;
-import com.tallermotos.interfaces.*;
+import com.tallermotos.abstractas.Service;
+import com.tallermotos.interfaces.Repairable;
+import com.tallermotos.interfaces.TimeTrackable;
 
 public class TireChangeService extends Service implements TimeTrackable, Repairable { // Clase cambio de llantas
 

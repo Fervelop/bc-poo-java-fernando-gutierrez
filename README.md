@@ -21,6 +21,8 @@
 | **semana-04** | Herencia |
 | **semana-05** | Sobrecarga, Sobrescritura y Polimorfismo |
 | **semana-06** | Abstracción e Interfaces |
+| **semana-07** | Paquetes y Excepciones |
+| **semana-08** | Sistema de Gestión |
 
 ## 🚀 Instrucciones de Ejecución
 
